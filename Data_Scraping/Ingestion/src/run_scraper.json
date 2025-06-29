@@ -1,0 +1,14 @@
+{
+  "100": {
+    "type": "book",
+    "url": "https://books.toscrape.com/catalogue/"
+  },
+  "200": {
+    "type": "employee",
+    "url": "https://api.slingacademy.com/v1/sample-data/files/employees.json"
+  },
+  "300": {
+    "type": "employee_GD",
+    "url": "https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download"
+  }
+}
