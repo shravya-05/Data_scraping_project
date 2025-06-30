@@ -138,17 +138,24 @@ employee_data.json
 ```json
 [
   {
-    "first_name": "Alice",
-    "last_name": "Smith",
-    "email": "alice@example.com",
-    "years_of_experience": 5
+    "id": 1,
+    "first_name": "Jose",
+    "last_name": "Lopez",
+    "email": "joselopez0944@slingacademy.com",
+    "phone": "+1-971-533-4552x1542",
+    "gender": "male",
+    "age": 25,
+    "job_title": "Project Manager",
+    "years_of_experience": 1,
+    "salary": 8500,
+    "department": "Product"
   }
 ]
 ```
 
-| user\_id | first\_name | last\_name | email                                       | job\_title | phone      | hire\_date |
-| -------- | ----------- | ---------- | ------------------------------------------- | ---------- | ---------- | ---------- |
-| 1        | John        | Doe        | [john@example.com](mailto:john@example.com) | Developer  | 1234567890 | 2021-05-01 |
+| user\_id       | first\_name | last\_name | email                 | job\_title         | phone        | hire\_date |
+| ---------------| ----------- | ---------- | --------------------- | ------------------ | -------------| ---------- |
+| 8717bbf45cCDbEe| Shelia      | Mahoney    | pwarner@example.org   | Probapion Officer  | 857-139-8239 | 2021-05-01 |
 
 
 ## Contributors
