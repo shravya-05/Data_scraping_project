@@ -2,11 +2,15 @@ import requests
 import pandas as pd
 import os
 import mimetypes
+import random
+
 
 # Google Drive file direct download link
 DRIVE_URL = "https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download"
 OUTPUT_CSV = "employee_data.csv"
 DOWNLOAD_PATH = "downloaded_employee_file.csv"
+hire_dates = ["2018-05-10", "2019-09-15", "2020-07-20", "2021-12-01", "2022-04-30"]
+
 
 # Download file from Google Drive
 def download_file(url, filename):
@@ -65,7 +69,10 @@ def run_employee_gd_scraper():
         # Step 3: Parse and structure data
         employee_df = parse_employee_data(DOWNLOAD_PATH)
 
-        # Step 4: Save to CSV
+        # Step 4: Add random hire date column
+        employee_df["hire_date"] = [random.choice(hire_dates) for _ in range(len(employee_df))]
+
+        # Step 5: Save to CSV
         employee_df.to_csv(OUTPUT_CSV, index=False)
         print(f"Employee data saved to {OUTPUT_CSV}")
 
@@ -74,6 +81,7 @@ def run_employee_gd_scraper():
 
     except Exception as e:
         print(f"Error occurred: {e}")
+
 
 # Only runs if called directly
 if __name__ == "__main__":
