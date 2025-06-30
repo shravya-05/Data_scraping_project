@@ -1,6 +1,6 @@
 # Data_scraping_project
 Multi-source data scraping and processing pipeline using Python  
-Team: Auryn, Shravya, Shreenidhi  
+Team: Shreenidhi, Auryn, Shravya 
 
 ## Overview
 This project scrapes and processes data from multiple sources:
@@ -11,7 +11,7 @@ This project scrapes and processes data from multiple sources:
 
 All datasets are processed, validated, and tested using a modular pipeline with file detection, normalization, and mocking-based unit tests.
 
-## 🎯 Objective
+## Objective
 
 - Extract and transform structured data (books and employees)  
 - Normalize, validate, and log data integrity issues  
@@ -131,7 +131,7 @@ Tests are executed via unit_test.py and invoked from main.py automatically based
 books_data.csv
 | Title               | Price | Rating | Availability | Product URL                                             |
 |---------------------|-------|--------|--------------|---------------------------------------------------      |
-| A Light in the Attic| 51.77 | 3      | In stock|    |https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html|
+| A Light in the Attic| 51.77 | 3      | In stock     |https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html|
 
 employee_data.json
 
@@ -148,14 +148,15 @@ employee_data.json
     "job_title": "Project Manager",
     "years_of_experience": 1,
     "salary": 8500,
-    "department": "Product"
+    "department": "Product",
+    "hire_date": "2020-07-20"
   }
 ]
 ```
 
 | user\_id       | first\_name | last\_name | email                 | job\_title         | phone        | hire\_date |
 | ---------------| ----------- | ---------- | --------------------- | ------------------ | -------------| ---------- |
-| 8717bbf45cCDbEe| Shelia      | Mahoney    | pwarner@example.org   | Probapion Officer  | 857-139-8239 | 2021-05-01 |
+| 8717bbf45cCDbEe| Shelia      | Mahoney    | pwarner@example.org   | Probapion Officer  | 857-139-8239 | 2021-12-01 |
 
 
 ## Contributors
