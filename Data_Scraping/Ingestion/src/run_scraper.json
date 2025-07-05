@@ -10,5 +10,9 @@
   "300": {
     "type": "employee_GD",
     "url": "https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download"
-  }
+  },
+  "400": {
+    "type": "data_mapping",
+    "url":""
+}
 }

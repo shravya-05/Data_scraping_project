@@ -13,6 +13,16 @@ import employee_GD
 unit_test_dir = os.path.abspath(os.path.join(current_dir, '..', 'Unit Test'))
 sys.path.append(unit_test_dir)
 import unit_test
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Get the processor folder path (Processing/Processor)
+processor_dir = os.path.abspath(os.path.join(current_dir, '..', '..', 'Processing', 'Processor'))
+sys.path.append(processor_dir)
+
+import datamapping
+import datamapping_process
+
+
 
 def load_config(file_name="run_scraper.json"):
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -55,6 +65,13 @@ def main():
         print("[Main] Running employee_GD scraper...")
         employee_GD.run_employee_gd_scraper()
         unit_test.run_tests("employee_GD")
+    elif scraper_type == "data_mapping":
+    
+        raw_df, ref_df = datamapping.read_raw_and_reference()
+        success = datamapping_process.filter_and_map_data(raw_df, ref_df)
+        if not success:
+            print("[Main] Data mapping failed.")
+
     else:
         print(f"[Error] Unknown scraper type: {scraper_type}")
 
